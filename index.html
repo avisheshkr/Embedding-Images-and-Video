@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Youtube Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!--***************
+        Navbar
+    ******************-->
+    <div class="navbar-container">
+      <div class="logo-container">
+        <i class="fas fa-bars fa-lg"></i>
+        <img src="./images/logo.svg" alt="Youtube Logo" />
+      </div>
+
+      <div class="search-container">
+        <input type="text" placeholder="Search" />
+        <div class="search-icon">
+          <i class="fas fa-search fa-lg"></i>
+        </div>
+
+        <div class="microphone-icon">
+          <i class="fas fa-microphone fa-lg"></i>
+        </div>
+      </div>
+
+      <div class="profile-container">
+        <i class="fas fa-video fa-lg"></i>
+        <img src="./images/apps.png" alt="app icon" class="app-icon" />
+        <i class="far fa-bell fa-lg"></i>
+        <img src="./images/profile.jpg" alt="Profile Picture" class="profile" />
+      </div>
+    </div>
+
+    <!--***************
+        Main Contents
+    ******************-->
+    <div class="main">
+      <!--***************
+        Main Video
+    ******************-->
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/JEw2_BD8qIA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <div class="video-info">
+          <p class="hashtag">#STEVETVShow</p>
+          <h3>Six-Year-Old Author Ariana Is Here To Steal Your Heart</h3>
+          <div class="views">
+            <p class="grey">14,625,711 views <span>.</span> May 31, 2018</p>
+            <div class="react-icons-container">
+              <div class="react-icons">
+                <i class="far fa-thumbs-up fa-lg"></i> <span> like</span>
+              </div>
+              <div class="react-icons">
+                <i class="far fa-thumbs-down fa-lg"></i> <span> dislike</span>
+              </div>
+              <div class="react-icons">
+                <i class="fas fa-share fa-lg"></i> <span> share</span>
+              </div>
+              <div class="react-icons">
+                <i class="far fa-save fa-lg"></i> <span> save</span>
+              </div>
+              <i class="fas fa-ellipsis-h fa-lg"></i>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <!--***************************
+        Channel and Video Description
+      ********************************-->
+        <div class="channel-container">
+          <div class="channel-logo">
+            <img src="./images/channel.png" alt="Channel Logo" />
+          </div>
+
+          <div class="channel">
+            <div class="channel-info">
+              <div class="channel-name">
+                <div>
+                  <h4>Steve TV Show</h4>
+                  <i class="fas fa-check-circle fa-sm"></i>
+                </div>
+                <p class="view-number">5.65M subscribers</p>
+              </div>
+              <a href="#" class="subscribe">Subscribe</a>
+            </div>
+
+            <p class="description">
+              At six years old, 'Little Big Shots' star Ariana is an author,
+              illustrator, publisher, lyricist and singer, to name a few.
+            </p>
+            <a href="#" class="show-more">show more</a>
+          </div>
+        </div>
+
+        <hr />
+      </div>
+
+      <!--***************
+          Sidebar
+      ******************-->
+      <div class="sidebar-container">
+        <div class="other-videos-link">
+          <a href="#">All</a>
+          <a href="#">Little Big Shots</a>
+          <a href="#">The Ellen DeGeneres Show</a>
+        </div>
+
+        <div class="other-videos-container">
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail.jpg" alt="" />
+              <div class="length">4:59</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4 id="video-title">
+                  How to watch videos on youtube - Full Tutorial
+                </h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail2.jpg" alt="" />
+              <div class="length">3:46</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>High quality headphones producing best sound for you</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail.jpg" alt="" />
+              <div class="length">4:59</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>How to watch videos on youtube - Full Tutorial</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail2.jpg" alt="" />
+              <div class="length">3:46</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>High quality headphones producing best sound for you</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail.jpg" alt="" />
+              <div class="length">4:59</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>How to watch videos on youtube - Full Tutorial</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail2.jpg" alt="" />
+              <div class="length">3:46</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>High quality headphones producing best sound for you</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail.jpg" alt="" />
+              <div class="length">4:59</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>How to watch videos on youtube - Full Tutorial</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail2.jpg" alt="" />
+              <div class="length">3:46</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>High quality headphones producing best sound for you</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail.jpg" alt="" />
+              <div class="length">4:59</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>How to watch videos on youtube - Full Tutorial</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail2.jpg" alt="" />
+              <div class="length">3:46</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>High quality headphones producing best sound for you</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail.jpg" alt="" />
+              <div class="length">4:59</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>How to watch videos on youtube - Full Tutorial</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail2.jpg" alt="" />
+              <div class="length">3:46</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>High quality headphones producing best sound for you</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail.jpg" alt="" />
+              <div class="length">4:59</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>How to watch videos on youtube - Full Tutorial</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail2.jpg" alt="" />
+              <div class="length">3:46</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>High quality headphones producing best sound for you</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail.jpg" alt="" />
+              <div class="length">4:59</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>How to watch videos on youtube - Full Tutorial</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail2.jpg" alt="" />
+              <div class="length">3:46</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>High quality headphones producing best sound for you</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail.jpg" alt="" />
+              <div class="length">4:59</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>How to watch videos on youtube - Full Tutorial</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail2.jpg" alt="" />
+              <div class="length">3:46</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>High quality headphones producing best sound for you</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail.jpg" alt="" />
+              <div class="length">4:59</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>How to watch videos on youtube - Full Tutorial</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail2.jpg" alt="" />
+              <div class="length">3:46</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>High quality headphones producing best sound for you</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail.jpg" alt="" />
+              <div class="length">4:59</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>How to watch videos on youtube - Full Tutorial</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail2.jpg" alt="" />
+              <div class="length">3:46</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>High quality headphones producing best sound for you</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail.jpg" alt="" />
+              <div class="length">4:59</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>How to watch videos on youtube - Full Tutorial</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+
+          <div class="other-videos">
+            <div class="image-container">
+              <img src="./images/thumbnail2.jpg" alt="" />
+              <div class="length">3:46</div>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-stream"></i>
+            </div>
+
+            <div class="other-videos-content">
+              <div>
+                <h4>High quality headphones producing best sound for you</h4>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+
+              <p class="view-number">AVISHESH KARKI</p>
+              <p class="view-number time">
+                1.5M views <span>.</span> 4 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="show-more btn">show more</a>
+      </div>
+
+      <!--**********************
+        Comments
+      ****************************-->
+
+      <div class="comments">
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Bindas Entertainment
+              <span class="view-number">3 months ago</span>
+            </p>
+            <p>
+              When I was her age , I used to think A Tree would grow inside my
+              stomach if I swallow a watermelon seed .
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              A J ✨
+              <span class="view-number">1 month ago</span>
+            </p>
+            <p>She speaks more confidently than me at this age. I'm 23 now!</p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">2.7K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 97 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Sancheetah
+              <span class="view-number">3 weeks ago</span>
+            </p>
+            <p>
+              When I was her age I was crying over the fact that my parents
+              didn't bring me to their wedding and I missed the good food😭
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Bindas Entertainment
+              <span class="view-number">3 months ago</span>
+            </p>
+            <p>
+              When I was her age , I used to think A Tree would grow inside my
+              stomach if I swallow a watermelon seed .
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              A J ✨
+              <span class="view-number">1 month ago</span>
+            </p>
+            <p>She speaks more confidently than me at this age. I'm 23 now!</p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">2.7K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 97 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Sancheetah
+              <span class="view-number">3 weeks ago</span>
+            </p>
+            <p>
+              When I was her age I was crying over the fact that my parents
+              didn't bring me to their wedding and I missed the good food😭
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Bindas Entertainment
+              <span class="view-number">3 months ago</span>
+            </p>
+            <p>
+              When I was her age , I used to think A Tree would grow inside my
+              stomach if I swallow a watermelon seed .
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              A J ✨
+              <span class="view-number">1 month ago</span>
+            </p>
+            <p>She speaks more confidently than me at this age. I'm 23 now!</p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">2.7K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 97 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Sancheetah
+              <span class="view-number">3 weeks ago</span>
+            </p>
+            <p>
+              When I was her age I was crying over the fact that my parents
+              didn't bring me to their wedding and I missed the good food😭
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Bindas Entertainment
+              <span class="view-number">3 months ago</span>
+            </p>
+            <p>
+              When I was her age , I used to think A Tree would grow inside my
+              stomach if I swallow a watermelon seed .
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              A J ✨
+              <span class="view-number">1 month ago</span>
+            </p>
+            <p>She speaks more confidently than me at this age. I'm 23 now!</p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">2.7K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 97 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Sancheetah
+              <span class="view-number">3 weeks ago</span>
+            </p>
+            <p>
+              When I was her age I was crying over the fact that my parents
+              didn't bring me to their wedding and I missed the good food😭
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Bindas Entertainment
+              <span class="view-number">3 months ago</span>
+            </p>
+            <p>
+              When I was her age , I used to think A Tree would grow inside my
+              stomach if I swallow a watermelon seed .
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              A J ✨
+              <span class="view-number">1 month ago</span>
+            </p>
+            <p>She speaks more confidently than me at this age. I'm 23 now!</p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">2.7K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 97 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Sancheetah
+              <span class="view-number">3 weeks ago</span>
+            </p>
+            <p>
+              When I was her age I was crying over the fact that my parents
+              didn't bring me to their wedding and I missed the good food😭
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Bindas Entertainment
+              <span class="view-number">3 months ago</span>
+            </p>
+            <p>
+              When I was her age , I used to think A Tree would grow inside my
+              stomach if I swallow a watermelon seed .
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              A J ✨
+              <span class="view-number">1 month ago</span>
+            </p>
+            <p>She speaks more confidently than me at this age. I'm 23 now!</p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">2.7K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 97 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Sancheetah
+              <span class="view-number">3 weeks ago</span>
+            </p>
+            <p>
+              When I was her age I was crying over the fact that my parents
+              didn't bring me to their wedding and I missed the good food😭
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Bindas Entertainment
+              <span class="view-number">3 months ago</span>
+            </p>
+            <p>
+              When I was her age , I used to think A Tree would grow inside my
+              stomach if I swallow a watermelon seed .
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              A J ✨
+              <span class="view-number">1 month ago</span>
+            </p>
+            <p>She speaks more confidently than me at this age. I'm 23 now!</p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">2.7K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 97 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Sancheetah
+              <span class="view-number">3 weeks ago</span>
+            </p>
+            <p>
+              When I was her age I was crying over the fact that my parents
+              didn't bring me to their wedding and I missed the good food😭
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Bindas Entertainment
+              <span class="view-number">3 months ago</span>
+            </p>
+            <p>
+              When I was her age , I used to think A Tree would grow inside my
+              stomach if I swallow a watermelon seed .
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              A J ✨
+              <span class="view-number">1 month ago</span>
+            </p>
+            <p>She speaks more confidently than me at this age. I'm 23 now!</p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">2.7K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 97 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Sancheetah
+              <span class="view-number">3 weeks ago</span>
+            </p>
+            <p>
+              When I was her age I was crying over the fact that my parents
+              didn't bring me to their wedding and I missed the good food😭
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Bindas Entertainment
+              <span class="view-number">3 months ago</span>
+            </p>
+            <p>
+              When I was her age , I used to think A Tree would grow inside my
+              stomach if I swallow a watermelon seed .
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              A J ✨
+              <span class="view-number">1 month ago</span>
+            </p>
+            <p>She speaks more confidently than me at this age. I'm 23 now!</p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">2.7K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 97 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Sancheetah
+              <span class="view-number">3 weeks ago</span>
+            </p>
+            <p>
+              When I was her age I was crying over the fact that my parents
+              didn't bring me to their wedding and I missed the good food😭
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Bindas Entertainment
+              <span class="view-number">3 months ago</span>
+            </p>
+            <p>
+              When I was her age , I used to think A Tree would grow inside my
+              stomach if I swallow a watermelon seed .
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              A J ✨
+              <span class="view-number">1 month ago</span>
+            </p>
+            <p>She speaks more confidently than me at this age. I'm 23 now!</p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">2.7K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 97 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Sancheetah
+              <span class="view-number">3 weeks ago</span>
+            </p>
+            <p>
+              When I was her age I was crying over the fact that my parents
+              didn't bring me to their wedding and I missed the good food😭
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Bindas Entertainment
+              <span class="view-number">3 months ago</span>
+            </p>
+            <p>
+              When I was her age , I used to think A Tree would grow inside my
+              stomach if I swallow a watermelon seed .
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              A J ✨
+              <span class="view-number">1 month ago</span>
+            </p>
+            <p>She speaks more confidently than me at this age. I'm 23 now!</p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">2.7K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 97 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Sancheetah
+              <span class="view-number">3 weeks ago</span>
+            </p>
+            <p>
+              When I was her age I was crying over the fact that my parents
+              didn't bring me to their wedding and I missed the good food😭
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Bindas Entertainment
+              <span class="view-number">3 months ago</span>
+            </p>
+            <p>
+              When I was her age , I used to think A Tree would grow inside my
+              stomach if I swallow a watermelon seed .
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              A J ✨
+              <span class="view-number">1 month ago</span>
+            </p>
+            <p>She speaks more confidently than me at this age. I'm 23 now!</p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">2.7K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 97 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Sancheetah
+              <span class="view-number">3 weeks ago</span>
+            </p>
+            <p>
+              When I was her age I was crying over the fact that my parents
+              didn't bring me to their wedding and I missed the good food😭
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Bindas Entertainment
+              <span class="view-number">3 months ago</span>
+            </p>
+            <p>
+              When I was her age , I used to think A Tree would grow inside my
+              stomach if I swallow a watermelon seed .
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              A J ✨
+              <span class="view-number">1 month ago</span>
+            </p>
+            <p>She speaks more confidently than me at this age. I'm 23 now!</p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">2.7K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 97 replies
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="./images/profile.jpg" alt="" class="profile" />
+          <div class="single-comment">
+            <p class="bold">
+              Sancheetah
+              <span class="view-number">3 weeks ago</span>
+            </p>
+            <p>
+              When I was her age I was crying over the fact that my parents
+              didn't bring me to their wedding and I missed the good food😭
+            </p>
+            <p>
+              <i class="far fa-thumbs-up fa-lg"></i>
+              <span class="view-number">7.3K</span>
+              <i class="far fa-thumbs-down fa-lg"></i>
+              <span style="color: #606069; font-weight: 500">REPLY</span>
+            </p>
+            <div>
+              <i class="fas fa-sort-down"></i>
+              View 181 replies
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
